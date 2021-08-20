@@ -53,7 +53,7 @@ spec:
           name: lets-chat-git
           env:
             - name: MONGODB_SERVICE_HOST
-              value: mongodb.letschat-rhacm.svc.clusterset.local.
+              value: mongodb.letschat.svc.clusterset.local.
             - name: MONGODB_SERVICE_PORT
               value: '27017'
           ports:
