@@ -5,7 +5,6 @@ metadata:
     app.openshift.io/vcs-ref: ''
     app.openshift.io/vcs-uri: 'https://github.com/geoffrey-pascal/lets-chat.git'
   name: lets-chat-git
-  namespace: letschat
   labels:
     app: lets-chat-git
     app.kubernetes.io/component: lets-chat-git
