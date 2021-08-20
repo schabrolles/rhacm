@@ -29,10 +29,9 @@ spec:
       imageChangeParams:
         automatic: true
         containerNames:
-          - lets-chat-git
+          - lets-chat
         from:
           kind: ImageStreamTag
-          namespace: letschat
           name: 'lets-chat:latest'
     - type: ConfigChange
   replicas: 1
@@ -65,7 +64,6 @@ spec:
           envFrom:
             - secretRef:
                 name: mongodb
-          image: lets-chat:latest
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
       dnsPolicy: ClusterFirst
