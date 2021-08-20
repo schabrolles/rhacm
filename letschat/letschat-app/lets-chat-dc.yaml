@@ -34,7 +34,7 @@ spec:
         from:
           kind: ImageStreamTag
           namespace: letschat
-          name: 'lets-chat-git:latest'
+          name: 'lets-chat:latest'
     - type: ConfigChange
   replicas: 1
   revisionHistoryLimit: 10
