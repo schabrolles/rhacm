@@ -29,7 +29,7 @@ spec:
       imageChangeParams:
         automatic: true
         containerNames:
-          - lets-chat
+          - lets-chat-git
         from:
           kind: ImageStreamTag
           name: 'lets-chat:latest'
