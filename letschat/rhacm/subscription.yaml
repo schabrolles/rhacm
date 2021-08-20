@@ -7,8 +7,26 @@ metadata:
     app: letschat-app
   annotations:
     apps.open-cluster-management.io/github-path: letschat/letschat-app
+    apps.open-cluster-management.io/github-branch: main
 spec:
   channel: letschat/letschat-app
   placement:
     placementRef:
       kind: PlacementRule
+      name: local
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: mongodb
+  labels:
+    app: mongodb
+  annotations:
+    apps.open-cluster-management.io/github-path: letschat/mogodb
+    apps.open-cluster-management.io/github-branch: main
+spec:
+  channel: letschat
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: ruby
