@@ -64,6 +64,7 @@ spec:
           envFrom:
             - secretRef:
                 name: mongodb
+          image: lets-chat:latest
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
       dnsPolicy: ClusterFirst
