@@ -4,7 +4,7 @@ kind: Service
 metadata:
   labels:
     app: letschat
-  name: letschat
+  name: letschat-svc
 spec:
   ports:
   - port: 8080
