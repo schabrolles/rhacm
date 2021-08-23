@@ -1,9 +1,0 @@
-
----
-apiVersion: apps.open-cluster-management.io/v1
-kind: Channel
-metadata:
-  name: letschat
-spec:
-  type: Git
-  pathname: https://github.com/schabrolles/rhacm.git
