@@ -1,0 +1,14 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: my-secrets
+spec:
+  channel: letschat-secrets-ch/my-secrets
+  packageFilter:
+    annotations:
+      secretname: letschat-secrets-ch
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: my-secrets-placement
