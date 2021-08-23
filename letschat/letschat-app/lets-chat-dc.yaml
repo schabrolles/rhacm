@@ -49,7 +49,6 @@ spec:
     spec:
       containers:
         - resources: {}
-        - resources: {}
           readinessProbe:
             httpGet:
               path: /
@@ -92,7 +91,7 @@ spec:
           envFrom:
             - secretRef:
                 name: mongodb
-          image: lets-chat:latest
+          image: quay.io/schabrolles/letschat_ppc64le:latest
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
       dnsPolicy: ClusterFirst
