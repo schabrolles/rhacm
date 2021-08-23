@@ -4,5 +4,6 @@ kind: Kustomization
 
 resources:
 - lets-chat-dc.yaml
+- lets-chat-is.yaml
 - lets-chat-route.yaml
 - lets-chat-svc.yaml
