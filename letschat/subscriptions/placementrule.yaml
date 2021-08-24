@@ -1,0 +1,51 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+      app: letschat
+  name: letschat-app-placement
+spec:
+  # clusters:
+  #   - name: ruby
+  clusterSelector:
+    matchLabels:
+      name: 'local-cluster'
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  clusterReplicas: 1  #Apply to how many matched clusters, default is ALL
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+      app: letschat
+  name: letschat-db-placement
+spec:
+  # clusters:
+  #   - name: ruby
+  clusterSelector:
+    matchLabels:
+      name: 'ruby'
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  clusterReplicas: 1  #Apply to how many matched clusters, default is ALL
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+      app: letschat
+  name: letschat-placement
+spec:
+  # clusters:
+  #   - name: ruby
+  # clusterSelector:
+  #   matchLabels:
+  #     name: 'local-cluster'
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  #clusterReplicas: 1  #Apply to how many matched clusters, default is ALL

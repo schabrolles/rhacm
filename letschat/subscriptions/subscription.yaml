@@ -1,0 +1,48 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: letschat-app
+  labels:
+    app: letschat
+  annotations:
+    apps.open-cluster-management.io/github-path: letschat/letschat-app
+    apps.open-cluster-management.io/github-branch: rhacm
+spec:
+  channel: letschat/letschat
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: letschat-app-placement
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: letschat-db
+  labels:
+    app: letschat
+  annotations:
+    apps.open-cluster-management.io/github-path: letschat/mongodb
+    apps.open-cluster-management.io/github-branch: rhacm
+spec:
+  channel: letschat/letschat
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: letschat-db-placement
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: letschat-secret
+  labels:
+    app: letschat
+  annotations:
+    apps.open-cluster-management.io/github-path: letschat/shared-secret
+    apps.open-cluster-management.io/github-branch: rhacm
+spec:
+  channel: letschat/letschat
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: letschat-placement
