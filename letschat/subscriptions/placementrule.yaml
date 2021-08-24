@@ -9,8 +9,13 @@ spec:
   # clusters:
   #   - name: ruby
   clusterSelector:
-    matchLabels:
-      name: 'local-cluster'
+    # matchLabels:
+    #   name: 'ruby
+    matchExpressions:
+      - key: name
+        operator: in
+        values: 
+          - 'local-cluster'
   clusterConditions:
     - type: ManagedClusterConditionAvailable
       status: "True"
@@ -26,8 +31,13 @@ spec:
   # clusters:
   #   - name: ruby
   clusterSelector:
-    matchLabels:
-      name: 'ruby'
+    # matchLabels:
+    #   name: 'local-cluster'
+  matchExpressions:
+    - key: name
+      operator: in
+      values: 
+        - 'local-cluster'
   clusterConditions:
     - type: ManagedClusterConditionAvailable
       status: "True"
