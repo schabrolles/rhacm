@@ -5,6 +5,7 @@ metadata:
   name: letschat-app
   labels:
     app: letschat
+  namespace: letschat
   annotations:
     apps.open-cluster-management.io/github-path: letschat/letschat-app
     apps.open-cluster-management.io/github-branch: rhacm
@@ -21,6 +22,7 @@ metadata:
   name: letschat-db
   labels:
     app: letschat
+  namespace: letschat
   annotations:
     apps.open-cluster-management.io/github-path: letschat/mongodb
     apps.open-cluster-management.io/github-branch: rhacm
@@ -37,6 +39,7 @@ metadata:
   name: letschat-secret
   labels:
     app: letschat
+  namespace: letschat
   annotations:
     apps.open-cluster-management.io/github-path: letschat/shared-secrets
     apps.open-cluster-management.io/github-branch: rhacm
