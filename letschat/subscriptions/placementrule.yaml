@@ -13,7 +13,7 @@ spec:
     #   name: 'ruby
     matchExpressions:
       - key: name
-        operator: in
+        operator: In
         values: 
           - 'local-cluster'
   clusterConditions:
@@ -35,7 +35,7 @@ spec:
     #   name: 'local-cluster'
     matchExpressions:
       - key: name
-        operator: in
+        operator: In
         values: 
           - 'local-cluster'
   clusterConditions:
