@@ -33,11 +33,11 @@ spec:
   clusterSelector:
     # matchLabels:
     #   name: 'local-cluster'
-  matchExpressions:
-    - key: name
-      operator: in
-      values: 
-        - 'local-cluster'
+    matchExpressions:
+      - key: name
+        operator: in
+        values: 
+          - 'local-cluster'
   clusterConditions:
     - type: ManagedClusterConditionAvailable
       status: "True"
