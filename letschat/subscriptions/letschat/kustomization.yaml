@@ -4,6 +4,6 @@ namespace: letschat
 resources:
 - namespace.yaml
 - placementrule.yaml
-- ../channel.yaml
+- channel.yaml
 - subscription.yaml
 - application.yaml
