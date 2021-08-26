@@ -8,8 +8,8 @@ metadata:
     template.openshift.io/template-instance-owner: 24a38adf-509c-11ea-bb23-0a580a80009b
     app.kubernetes.io/component: database
     app.kubernetes.io/name: letschat-db
-    app.kubernetes.io/part-of: lets-chat
-    app: lets-chat
+    app.kubernetes.io/part-of: letschat
+    app: letschat
   name: mongodb
 spec:
   replicas: 1

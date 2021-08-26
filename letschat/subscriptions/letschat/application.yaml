@@ -11,3 +11,4 @@
             operator: In 
             values: 
               - letschat
+              - letchat-db
