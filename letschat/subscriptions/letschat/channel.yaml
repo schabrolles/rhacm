@@ -1,6 +1,8 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: Channel
 metadata:
+  annotations: 
+    apps.open-cluster-management.io/reconcile-rate: High
   name: letschat
 spec:
   type: GitHub

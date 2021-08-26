@@ -8,7 +8,7 @@ metadata:
   namespace: letschat
   annotations:
     apps.open-cluster-management.io/github-path: letschat/letschat-app
-    apps.open-cluster-management.io/github-branch: rhacm
+    apps.open-cluster-management.io/github-branch: rhacmx
 spec:
   channel: letschat/letschat
   placement:
