@@ -3,6 +3,7 @@ kind: Channel
 metadata:
   annotations: 
     apps.open-cluster-management.io/reconcile-rate: High
+    apps.open-cluster-management.io/github-path: apps
   labels:
     app: sushiweb-rhacm
   name: sushiweb
