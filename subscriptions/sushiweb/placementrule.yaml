@@ -4,7 +4,7 @@ kind: PlacementRule
 metadata:
   labels:
     app: sushiweb-rhacm
-  name: sushi-placement
+  name: sushiweb-rhacm-placement
   namespace: sushiweb-rhacm
 spec:
   # clusters:
