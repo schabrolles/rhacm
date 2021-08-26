@@ -14,7 +14,7 @@ metadata:
     app.kubernetes.io/part-of: letschat
     app.openshift.io/runtime-namespace: letschat
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: letschat
