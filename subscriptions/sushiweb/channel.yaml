@@ -4,7 +4,7 @@ metadata:
   annotations: 
     apps.open-cluster-management.io/reconcile-rate: High
   name: sushiweb
-  namespace: suwhiweb-rhacm
+  namespace: sushiweb-rhacm
 spec:
   type: GitHub
   pathname: https://github.com/schabrolles/rhacm.git
