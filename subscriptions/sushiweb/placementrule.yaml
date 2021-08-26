@@ -3,7 +3,7 @@ apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
   labels:
-      app: sushiweb-rhacm
+    app: sushiweb-rhacm
   name: sushi-placement
   namespace: sushiweb-rhacm
 spec:
