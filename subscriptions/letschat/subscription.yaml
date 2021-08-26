@@ -8,7 +8,7 @@ metadata:
   namespace: letschat
   annotations:
     apps.open-cluster-management.io/github-path: deployable/letschat/letschat-app
-    apps.open-cluster-management.io/github-branch: rhacm
+    apps.open-cluster-management.io/github-branch: main
 spec:
   channel: letschat/letschat
   placement:
@@ -25,7 +25,7 @@ metadata:
   namespace: letschat
   annotations:
     apps.open-cluster-management.io/github-path: deployable/letschat/mongodb
-    apps.open-cluster-management.io/github-branch: rhacm
+    apps.open-cluster-management.io/github-branch: main
 spec:
   channel: letschat/letschat
   placement:
@@ -42,7 +42,7 @@ metadata:
   namespace: letschat
   annotations:
     apps.open-cluster-management.io/github-path: deployable/letschat/shared-secrets
-    apps.open-cluster-management.io/github-branch: rhacm
+    apps.open-cluster-management.io/github-branch: main
 spec:
   channel: letschat/letschat
   placement:

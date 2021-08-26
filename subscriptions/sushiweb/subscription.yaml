@@ -8,7 +8,7 @@ metadata:
   namespace: sushiweb-rhacm
   annotations:
     apps.open-cluster-management.io/github-path: deployable/sushiweb
-    apps.open-cluster-management.io/github-branch: rhacm
+    apps.open-cluster-management.io/github-branch: main
 spec:
   channel: sushiweb-rhacm/sushiweb
   placement:
