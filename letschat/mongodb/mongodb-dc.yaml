@@ -95,8 +95,9 @@ spec:
       securityContext: {}
       terminationGracePeriodSeconds: 30
       volumes:
-      - emptyDir: {}
-        name: mongo-data
+        - name: mongodb-data
+          persistentVolumeClaim:
+            claimName: mongodb
   test: false
   triggers:
   - imageChangeParams:
