@@ -16,7 +16,7 @@ spec:
       - key: name
         operator: In
         values: 
-          - 'local-cluster'
+          - 'jade'
   clusterConditions:
     - type: ManagedClusterConditionAvailable
       status: "True"
@@ -39,7 +39,7 @@ spec:
       - key: name
         operator: In
         values: 
-          - 'local-cluster'
+          - 'jade'
   clusterConditions:
     - type: ManagedClusterConditionAvailable
       status: "True"
