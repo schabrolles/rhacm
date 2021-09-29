@@ -5,12 +5,12 @@ metadata:
   name: letschat-app
   labels:
     app: letschat
-  namespace: letschat
+  namespace: letschat-rhacm
   annotations:
-    apps.open-cluster-management.io/github-path: apps/letschat/letschat-app
+    apps.open-cluster-management.io/github-path: apps/letschat/letschat-app/overlay/submariner
     apps.open-cluster-management.io/github-branch: main
 spec:
-  channel: letschat/letschat
+  channel: letschat-rhacm/letschat
   placement:
     placementRef:
       kind: PlacementRule
@@ -22,12 +22,12 @@ metadata:
   name: letschat-db
   labels:
     app: letschat
-  namespace: letschat
+  namespace: letschat-rhacm
   annotations:
-    apps.open-cluster-management.io/github-path: apps/letschat/mongodb
+    apps.open-cluster-management.io/github-path: apps/letschat/mongodb/overlay/submariner
     apps.open-cluster-management.io/github-branch: main
 spec:
-  channel: letschat/letschat
+  channel: letschat-rhacm/letschat
   placement:
     placementRef:
       kind: PlacementRule
@@ -44,7 +44,7 @@ metadata:
     apps.open-cluster-management.io/github-path: apps/letschat/shared-secrets
     apps.open-cluster-management.io/github-branch: main
 spec:
-  channel: letschat/letschat
+  channel: letschat-rhacm/letschat
   placement:
     placementRef:
       kind: PlacementRule

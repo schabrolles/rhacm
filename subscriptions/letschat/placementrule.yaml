@@ -5,7 +5,7 @@ metadata:
   labels:
       app: letschat
   name: letschat-app-placement
-  namespace: letschat
+  namespace: letschat-rhacm
 spec:
   # clusters:
   #   - name: ruby
@@ -28,7 +28,7 @@ metadata:
   labels:
       app: letschat
   name: letschat-db-placement
-  namespace: letschat
+  namespace: letschat-rhacm
 spec:
   # clusters:
   #   - name: ruby
@@ -51,7 +51,7 @@ metadata:
   labels:
       app: letschat
   name: letschat-placement
-  namespace: letschat
+  namespace: letschat-rhacm
 spec:
   # clusters:
   #   - name: ruby
