@@ -10,13 +10,13 @@ spec:
   # clusters:
   #   - name: ruby
   clusterSelector:
-    # matchLabels:
-    #   name: 'ruby
-    matchExpressions:
-      - key: name
-        operator: In
-        values: 
-          - 'jade'
+    matchLabels:
+      name: 'grey'
+    # matchExpressions:
+    #   - key: name
+    #     operator: In
+    #     values: 
+    #       - 'grey'
   clusterConditions:
     - type: ManagedClusterConditionAvailable
       status: "True"
@@ -33,13 +33,13 @@ spec:
   # clusters:
   #   - name: ruby
   clusterSelector:
-    # matchLabels:
-    #   name: 'local-cluster'
-    matchExpressions:
-      - key: name
-        operator: In
-        values: 
-          - 'jade'
+    matchLabels:
+      name: 'grey'
+    # matchExpressions:
+    #   - key: name
+    #     operator: In
+    #     values: 
+    #       - 'grey'
   clusterConditions:
     - type: ManagedClusterConditionAvailable
       status: "True"
@@ -55,9 +55,9 @@ metadata:
 spec:
   # clusters:
   #   - name: ruby
-  # clusterSelector:
-  #   matchLabels:
-  #     name: 'local-cluster'
+  clusterSelector:
+    matchLabels:
+      demoRHACM: 'true'
   clusterConditions:
     - type: ManagedClusterConditionAvailable
       status: "True"
