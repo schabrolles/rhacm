@@ -64,11 +64,6 @@ spec:
             failureThreshold: 3
           terminationMessagePolicy: File
           image: quay.io/schabrolles/letschat_ppc64le:latest
-          env:
-            - name: MONGODB_SERVICE_HOST
-              value: mongodb.letschat.svc.clusterset.local.
-            - name: MONGODB_SERVICE_PORT
-              value: '27017'
           envFrom:
             - secretRef:
                 name: mongodb
