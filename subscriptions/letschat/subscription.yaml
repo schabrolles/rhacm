@@ -24,7 +24,7 @@ metadata:
     app: letschat
   namespace: letschat-rhacm
   annotations:
-    apps.open-cluster-management.io/github-path: apps/letschat/mongodb/sublmariner
+    apps.open-cluster-management.io/github-path: apps/letschat/mongodb/submariner
     apps.open-cluster-management.io/github-branch: test
 spec:
   channel: letschat-rhacm/letschat
