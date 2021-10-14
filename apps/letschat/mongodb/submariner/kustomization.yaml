@@ -10,4 +10,3 @@ patchesStrategicMerge:
 
 resources:
 - mongodb-svc-exp.yaml
-- mongodb-shared-pv.yaml
