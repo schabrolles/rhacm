@@ -53,9 +53,9 @@ spec:
                 - >-
                   mongo 127.0.0.1:27017/$MONGODB_DATABASE -u $MONGODB_USER -p
                   $MONGODB_PASSWORD --eval="quit()"
-            initialDelaySeconds: 3
+            initialDelaySeconds: 1
             timeoutSeconds: 1
-            periodSeconds: 10
+            periodSeconds: 1
             successThreshold: 1
             failureThreshold: 3
           terminationMessagePath: /dev/termination-log
@@ -63,9 +63,9 @@ spec:
           livenessProbe:
             tcpSocket:
               port: 27017
-            initialDelaySeconds: 30
+            initialDelaySeconds: 5
             timeoutSeconds: 1
-            periodSeconds: 10
+            periodSeconds: 1
             successThreshold: 1
             failureThreshold: 3
           env:
