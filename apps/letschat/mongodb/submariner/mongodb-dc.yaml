@@ -1,0 +1,7 @@
+kind: DeploymentConfig
+apiVersion: apps.openshift.io/v1
+spec:
+  template:
+    spec:
+      securityContext:
+        runAsUser: 1000700000
