@@ -4,3 +4,4 @@ kind: Kustomization
 
 resources:
 - mongodb-secret.yaml
+- mongodb-pvc.yaml
