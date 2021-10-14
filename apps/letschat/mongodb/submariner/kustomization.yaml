@@ -12,3 +12,5 @@ patchesStrategicMerge:
 resources:
 - mongodb-svc-exp.yaml
 - mongodb-shared-pv.yaml
+- serviceaccount.yaml
+- rolebinding.yaml
