@@ -46,7 +46,7 @@ spec:
               port: 8080
               scheme: HTTP
             timeoutSeconds: 1
-            periodSeconds: 10
+            periodSeconds: 1
             successThreshold: 1
             failureThreshold: 3
           ports:
