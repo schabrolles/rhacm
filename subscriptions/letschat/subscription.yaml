@@ -8,7 +8,7 @@ metadata:
   namespace: letschat-rhacm
   annotations:
     apps.open-cluster-management.io/github-path: apps/letschat/letschat-app/submariner
-    apps.open-cluster-management.io/github-branch: test
+    apps.open-cluster-management.io/github-branch: main
 spec:
   channel: letschat-rhacm/letschat
   placement:
@@ -25,7 +25,7 @@ metadata:
   namespace: letschat-rhacm
   annotations:
     apps.open-cluster-management.io/github-path: apps/letschat/mongodb/submariner
-    apps.open-cluster-management.io/github-branch: test
+    apps.open-cluster-management.io/github-branch: main
 spec:
   channel: letschat-rhacm/letschat
   placement:
@@ -42,7 +42,7 @@ metadata:
   namespace: letschat
   annotations:
     apps.open-cluster-management.io/github-path: apps/letschat/shared-secrets
-    apps.open-cluster-management.io/github-branch: test
+    apps.open-cluster-management.io/github-branch: main
 spec:
   channel: letschat-rhacm/letschat
   placement:
