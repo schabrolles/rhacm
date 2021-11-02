@@ -63,7 +63,7 @@ spec:
             successThreshold: 1
             failureThreshold: 3
           terminationMessagePolicy: File
-          image: quay.io/schabrolles/letschat_ppc64le:latest
+          image: quay.io/schabrolles/letschat:latest
           envFrom:
             - secretRef:
                 name: mongodb
