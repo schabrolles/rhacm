@@ -11,7 +11,7 @@ spec:
   #   - name: ruby
   clusterSelector:
     matchLabels:
-      name: 'grey'
+      arch: 'x86'
     # matchExpressions:
     #   - key: name
     #     operator: In
@@ -34,7 +34,7 @@ spec:
   #   - name: ruby
   clusterSelector:
     matchLabels:
-      name: 'grey'
+      arch: 'x86'
     # matchExpressions:
     #   - key: name
     #     operator: In
