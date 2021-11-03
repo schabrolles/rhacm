@@ -6,3 +6,4 @@ resources:
 - lets-chat-deployment.yaml
 - lets-chat-route.yaml
 - lets-chat-svc.yaml
+- namespace.yaml
