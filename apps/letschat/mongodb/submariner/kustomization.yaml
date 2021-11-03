@@ -7,11 +7,11 @@ bases:
 
 patchesStrategicMerge:
 - mongodb-pvc.yaml
-#- mongodb-dc.yaml
+- mongodb-dc.yaml
 #- namespace.yaml
 
 resources:
 - mongodb-svc-exp.yaml
 - mongodb-shared-pv.yaml
-#- serviceaccount.yaml
-#- rolebinding.yaml
+- serviceaccount.yaml
+- rolebinding.yaml

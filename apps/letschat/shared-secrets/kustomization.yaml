@@ -4,4 +4,4 @@ kind: Kustomization
 
 resources:
 - mongodb-secret.yaml
-- namespace.yaml
+#- namespace.yaml
