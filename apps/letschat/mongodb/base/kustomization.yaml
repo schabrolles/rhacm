@@ -6,4 +6,4 @@ resources:
 - mongodb-dc.yaml
 - mongodb-svc.yaml
 - mongodb-pvc.yaml
-- namespace.yaml
+#- namespace.yaml

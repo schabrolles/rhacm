@@ -8,7 +8,7 @@ bases:
 patchesStrategicMerge:
 - mongodb-pvc.yaml
 #- mongodb-dc.yaml
-- namespace.yaml
+#- namespace.yaml
 
 resources:
 - mongodb-svc-exp.yaml
