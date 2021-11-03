@@ -7,6 +7,7 @@ bases:
 
 patchesStrategicMerge:
 - lets-chat-deployment.yaml
+- namespace.yaml
 
 # resources:
 # - lets-chat-deployment.yaml
