@@ -11,6 +11,7 @@ spec:
   #   - name: ruby
   clusterSelector:
     matchLabels:
+      demoRHACM: true
       arch: 'x86'
     # matchExpressions:
     #   - key: name
@@ -34,6 +35,7 @@ spec:
   #   - name: ruby
   clusterSelector:
     matchLabels:
+      demoRHACM: true
       arch: 'x86'
     # matchExpressions:
     #   - key: name
