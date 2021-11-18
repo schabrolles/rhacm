@@ -11,7 +11,7 @@ spec:
   #   - name: ruby
   clusterSelector:
     matchLabels:
-      demoRHACM: 'true'
+      cluster.open-cluster-management.io/clusterset: demo
       arch: 'x86'
     # matchExpressions:
     #   - key: name
@@ -35,7 +35,7 @@ spec:
   #   - name: ruby
   clusterSelector:
     matchLabels:
-      demoRHACM: 'true'
+      cluster.open-cluster-management.io/clusterset: demo
       arch: 'x86'
     # matchExpressions:
     #   - key: name
@@ -59,7 +59,7 @@ spec:
   #   - name: ruby
   clusterSelector:
     matchLabels:
-      demoRHACM: 'true'
+      cluster.open-cluster-management.io/clusterset: demo
   clusterConditions:
     - type: ManagedClusterConditionAvailable
       status: "True"
