@@ -4,7 +4,7 @@ metadata:
   annotations: 
     apps.open-cluster-management.io/reconcile-rate: High
     apps.open-cluster-management.io/github-path: apps
-  name: github-schabrolles-rhacm
+  name: letschat
 spec:
   type: GitHub
   pathname: https://github.com/schabrolles/rhacm.git
