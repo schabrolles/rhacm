@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: sushiweb
-          image: quay.io/schabrolles/sushiweb:v1.7
+          image: quay.io/schabrolles/sushiweb:original
           ports:
             - containerPort: 8080
               protocol: TCP
