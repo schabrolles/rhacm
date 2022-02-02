@@ -1,0 +1,66 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+      app: letschat
+  name: letschat-app-placement
+  namespace: letschat-rhacm
+spec:
+  # clusters:
+  #   - name: ruby
+  clusterSelector:
+    matchLabels:
+      cluster.open-cluster-management.io/clusterset: demo
+      arch: 'x86'
+    # matchExpressions:
+    #   - key: name
+    #     operator: In
+    #     values: 
+    #       - 'grey'
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  clusterReplicas: 1  #Apply to how many matched clusters, default is ALL
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+      app: letschat
+  name: letschat-db-placement
+  namespace: letschat-rhacm
+spec:
+  # clusters:
+  #   - name: ruby
+  clusterSelector:
+    matchLabels:
+      cluster.open-cluster-management.io/clusterset: demo
+      arch: 'ppc64le'
+    # matchExpressions:
+    #   - key: name
+    #     operator: In
+    #     values: 
+    #       - 'grey'
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  clusterReplicas: 1  #Apply to how many matched clusters, default is ALL
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+      app: letschat
+  name: letschat-placement
+  namespace: letschat-rhacm
+spec:
+  # clusters:
+  #   - name: ruby
+  clusterSelector:
+    matchLabels:
+      cluster.open-cluster-management.io/clusterset: demo
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  #clusterReplicas: 1  #Apply to how many matched clusters, default is ALL
