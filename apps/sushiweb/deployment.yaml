@@ -11,7 +11,7 @@ metadata:
     app.kubernetes.io/name: sushiweb
     app.kubernetes.io/part-of: sushiweb-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: sushiweb
@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: sushiweb
-          image: quay.io/schabrolles/sushiweb:rhacm
+          image: quay.io/schabrolles/sushiweb:v1.0
           ports:
             - containerPort: 8080
               protocol: TCP
