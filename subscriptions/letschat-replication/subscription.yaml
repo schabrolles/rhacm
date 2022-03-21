@@ -4,7 +4,7 @@ kind: Subscription
 metadata:
   name: letschat-primary
   labels:
-    app: letschat
+    app: letschat-replication
   namespace: letschat-replication
   annotations:
     apps.open-cluster-management.io/github-path: apps/letschat/letschat-full/primary
@@ -21,7 +21,7 @@ kind: Subscription
 metadata:
   name: letschat-secondary
   labels:
-    app: letschat
+    app: letschat-replication
   namespace: letschat-replication
   annotations:
     apps.open-cluster-management.io/github-path: apps/letschat/letschat-full/secondary
