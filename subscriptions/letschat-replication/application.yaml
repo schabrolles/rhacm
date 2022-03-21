@@ -10,4 +10,4 @@
           - key: app
             operator: In 
             values: 
-              - letschat-replication
+              - letschat
