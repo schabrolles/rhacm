@@ -3,7 +3,7 @@
     kind: Application
     metadata:
       namespace: letschat-rhacm
-      name: letschat
+      name: letschat-replication
     spec:
       selector:
         matchExpressions:
