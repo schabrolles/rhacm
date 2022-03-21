@@ -32,5 +32,3 @@ spec:
     placementRef:
       kind: PlacementRule
       name: letschat-secondary
-
-

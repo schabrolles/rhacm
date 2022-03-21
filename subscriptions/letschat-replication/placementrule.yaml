@@ -41,7 +41,7 @@ spec:
       - key: letschat
         operator: Exists
       - key: letschat
-        operator: notIn
+        operator: NotIn
         values:
           - 'primary'
       - key: cluster.open-cluster-management.io/clusterset
