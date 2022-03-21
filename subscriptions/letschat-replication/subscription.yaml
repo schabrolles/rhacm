@@ -10,7 +10,7 @@ metadata:
     apps.open-cluster-management.io/github-path: apps/letschat/letschat-full/primary
     apps.open-cluster-management.io/github-branch: main
 spec:
-  channel: rhacm-demo/letschat
+  channel: rhacm-demo/letschat-replication
   placement:
     placementRef:
       kind: PlacementRule
@@ -27,7 +27,7 @@ metadata:
     apps.open-cluster-management.io/github-path: apps/letschat/letschat-full/secondary
     apps.open-cluster-management.io/github-branch: main
 spec:
-  channel: rhacm-demo/letschat
+  channel: rhacm-demo/letschat-replication
   placement:
     placementRef:
       kind: PlacementRule
