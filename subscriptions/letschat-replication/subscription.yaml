@@ -1,0 +1,36 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: letschat
+  labels:
+    app: letschat
+  namespace: letschat-replication
+  annotations:
+    apps.open-cluster-management.io/github-path: apps/letschat/letschat-app+db/replication/primary
+    apps.open-cluster-management.io/github-branch: main
+spec:
+  channel: rhacm-demo/letschat
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: letschat-primary
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: letschat
+  labels:
+    app: letschat
+  namespace: letschat-replication
+  annotations:
+    apps.open-cluster-management.io/github-path: apps/letschat/letschat-app+db/replication/secondary
+    apps.open-cluster-management.io/github-branch: main
+spec:
+  channel: rhacm-demo/letschat
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: letschat-secondary
+
+
