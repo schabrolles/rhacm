@@ -1,0 +1,22 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: pvc-letschat-mongodb
+  annotations:
+    pv.kubernetes.io/provisioned-by: openshift-storage.rbd.csi.ceph.com
+spec:
+  capacity:
+    storage: 1Gi
+  csi:
+    driver: openshift-storage.rbd.csi.ceph.com
+    volumeHandle: pvc-letschat-mongodb
+    fsType: ext4
+    nodeStageSecretRef:
+      name: rook-csi-rbd-node
+      namespace: openshift-storage
+  accessModes:
+    - ReadWriteOnce
+  claimRef: null
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: ocs-storagecluster-ceph-mirror
+  volumeMode: Filesystem
