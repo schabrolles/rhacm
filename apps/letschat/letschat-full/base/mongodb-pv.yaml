@@ -17,7 +17,7 @@ spec:
     volumeAttributes:
       pool: replicapool
       clusterID: openshift-storage
-      staticVolume: "true"
+      # staticVolume: "true"
       # csi.storage.k8s.io/controller-expand-secret-name: rook-csi-rbd-provisioner
       # csi.storage.k8s.io/controller-expand-secret-namespace: openshift-storage
       # csi.storage.k8s.io/fstype: ext4
