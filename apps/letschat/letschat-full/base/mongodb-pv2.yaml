@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pvc-letschat-mongodb
+spec:
+  capacity:
+    storage: 1Gi 
+  accessModes:
+    - ReadWriteOnce 
+  rbd: 
+    monitors: 
+      - rook-ceph-mon-a.openshift-storage.svc.cluster.local:6789
+    pool: replicapool
+    image: pvc-letschat-mongodb
+    # user: admin
+    secretRef:
+      name: rook-csi-rbd-node
+      namespace: openshift-storage
+    fsType: ext4 
+    readOnly: false
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: ocs-storagecluster-ceph-mirror
