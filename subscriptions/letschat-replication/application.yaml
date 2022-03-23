@@ -1,13 +1,17 @@
 ---
-    apiVersion: app.k8s.io/v1beta1
-    kind: Application
-    metadata:
-      namespace: letschat-rhacm
-      name: letschat-replication
-    spec:
-      selector:
-        matchExpressions:
-          - key: app
-            operator: In 
-            values: 
-              - letschat-replication
+apiVersion: app.k8s.io/v1beta1
+kind: Application
+metadata:
+  name: letschat-replication
+  namespace: letschat-replication
+spec:
+  componentKinds:
+  - group: apps.open-cluster-management.io
+    kind: Subscription
+  descriptor: {}
+  selector:
+    matchExpressions:
+      - key: app
+        operator: In
+        values: 
+          - letschat-replication

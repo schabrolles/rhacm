@@ -2,15 +2,16 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
-  name: letschat-primary
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-path: apps/letschat/letschat-full/primary
+    apps.open-cluster-management.io/reconcile-option: merge
   labels:
     app: letschat-replication
+  name: letschat-primary
   namespace: letschat-replication
-  annotations:
-    apps.open-cluster-management.io/github-path: apps/letschat/letschat-full/primary
-    apps.open-cluster-management.io/github-branch: main
 spec:
-  channel: rhacm-demo/letschat-replication
+  channel: letschat-rhacm/letschat
   placement:
     placementRef:
       kind: PlacementRule
@@ -19,15 +20,16 @@ spec:
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
-  name: letschat-secondary
+  annotations:
+    apps.open-cluster-management.io/git-branch: main
+    apps.open-cluster-management.io/git-path: apps/letschat/letschat-full/secondary
+    apps.open-cluster-management.io/reconcile-option: merge
   labels:
     app: letschat-replication
+  name: letschat-secondary
   namespace: letschat-replication
-  annotations:
-    apps.open-cluster-management.io/github-path: apps/letschat/letschat-full/secondary
-    apps.open-cluster-management.io/github-branch: main
 spec:
-  channel: rhacm-demo/letschat-replication
+  channel: letschat-rhacm/letschat
   placement:
     placementRef:
       kind: PlacementRule

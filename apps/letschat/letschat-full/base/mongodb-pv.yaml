@@ -14,6 +14,8 @@ spec:
     nodeStageSecretRef:
       name: rook-csi-rbd-node
       namespace: openshift-storage
+    volumeAttributes:
+      pool: replicapool
   accessModes:
     - ReadWriteOnce
   claimRef: null
