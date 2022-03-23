@@ -4,7 +4,7 @@ metadata:
   name: pvc-letschat-mongodb
 spec:
   capacity:
-    storage: 2Gi 
+    storage: 1Gi 
   accessModes:
     - ReadWriteOnce 
   rbd: 

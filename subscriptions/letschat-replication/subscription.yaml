@@ -4,7 +4,7 @@ kind: Subscription
 metadata:
   annotations:
     apps.open-cluster-management.io/git-branch: main
-    apps.open-cluster-management.io/git-path: apps/letschat/letschat-full/primary
+    apps.open-cluster-management.io/git-path: apps/letschat/letschat-full/replication/primary
     apps.open-cluster-management.io/reconcile-option: merge
   labels:
     app: letschat-replication
@@ -22,7 +22,7 @@ kind: Subscription
 metadata:
   annotations:
     apps.open-cluster-management.io/git-branch: main
-    apps.open-cluster-management.io/git-path: apps/letschat/letschat-full/secondary
+    apps.open-cluster-management.io/git-path: apps/letschat/letschat-full/replication/secondary
     apps.open-cluster-management.io/reconcile-option: merge
   labels:
     app: letschat-replication
