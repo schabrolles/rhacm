@@ -19,3 +19,4 @@ spec:
     fsType: ext4 
     readOnly: false
   persistentVolumeReclaimPolicy: Retain
+  storageClassName: ocs-storagecluster-ceph-mirror
