@@ -6,7 +6,7 @@ bases:
 - ../base
 
 patchesStrategicMerge:
-- mongodb-pvc.yaml
+# - mongodb-pvc.yaml
 # - mongodb-dc.yaml
 # - namespace.yaml
 
