@@ -17,6 +17,6 @@ spec:
   accessModes:
     - ReadWriteOnce
   claimRef: null
-  persistentVolumeReclaimPolicy: Delete
+  persistentVolumeReclaimPolicy: Retain
   storageClassName: ocs-storagecluster-ceph-mirror
   volumeMode: Filesystem
