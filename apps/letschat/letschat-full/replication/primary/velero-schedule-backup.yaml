@@ -7,5 +7,5 @@ spec:
   schedule: '*/15 * * * * '
   template:
     includedNamespaces:
-      - test-replication
+      - letschat-replication
     ttl: 1h
