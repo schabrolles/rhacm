@@ -4,7 +4,7 @@ metadata:
   namespace: openshift-adp
   name: restore
 spec:
-  scheduleName: lets chat-replication
+  scheduleName: letschat-replication
   # includedResources:
   #   - pv
   includedNamespaces:
