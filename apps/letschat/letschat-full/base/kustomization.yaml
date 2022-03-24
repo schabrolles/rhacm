@@ -9,5 +9,5 @@ resources:
 - mongodb-dc.yaml
 - mongodb-svc.yaml
 - mongodb-pvc.yaml
-- mongodb-pv.yaml
+#- mongodb-pv.yaml
 - mongodb-secret.yaml
