@@ -3,7 +3,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- velero-restore.yaml
 - lets-chat-deployment.yaml
 - lets-chat-route.yaml
 - lets-chat-svc.yaml
@@ -12,4 +11,3 @@ resources:
 - mongodb-pvc.yaml
 #- mongodb-pv.yaml
 - mongodb-secret.yaml
-- velero-schedule-backup.yaml
