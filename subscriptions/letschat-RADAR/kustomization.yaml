@@ -7,4 +7,3 @@ resources:
 - channel.yaml
 - subscription.yaml
 - application.yaml
-- shared-secrets.yaml
