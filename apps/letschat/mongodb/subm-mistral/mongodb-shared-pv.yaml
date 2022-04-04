@@ -10,7 +10,7 @@ spec:
     volumeHandle: >-
       8274719981642943972;2403030A:61A7974F;filesetName=letschat-demo;path=/mnt/remote-hmcs-fs1/letschat-demo
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   claimRef: null
   persistentVolumeReclaimPolicy: Delete
   storageClassName: letschat-rahcm-demo
