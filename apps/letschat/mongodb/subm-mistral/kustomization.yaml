@@ -5,13 +5,13 @@ kind: Kustomization
 bases:
 - ../base
 
-# patchesStrategicMerge:
-# - mongodb-pvc.yaml
-# - mongodb-dc.yaml
-# - namespace.yaml
+patchesStrategicMerge:
+- mongodb-pvc.yaml
+- mongodb-dc.yaml
+- namespace.yaml
 
 resources:
 - mongodb-svc-exp.yaml
-# - mongodb-shared-pv.yaml
-# - serviceaccount.yaml
-# - rolebinding.yaml
+- mongodb-shared-pv.yaml
+- serviceaccount.yaml
+- rolebinding.yaml
