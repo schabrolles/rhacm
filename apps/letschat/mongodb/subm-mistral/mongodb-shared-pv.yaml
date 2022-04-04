@@ -2,17 +2,23 @@ kind: PersistentVolume
 apiVersion: v1
 metadata:
   name: mongodb-shared-pv
-  annotations:
-    pv.kubernetes.io/bound-by-controller: 'yes'
 spec:
   capacity:
-    storage: 5Gi
-  nfs:
-    server: 10.3.47.111
-    path: /export/demo-rhacm-submariner/mongodb-letschat-shared
+    storage: 3Gi
+  csi:
+    driver: spectrumscale.csi.ibm.com
+    volumeHandle: >-
+      8274719981642943972;2403030A:61A7974F;filesetName=pvc-c190af17-cc13-4e1b-b649-5e8bab4c892e;path=/mnt/remote-hmcs-fs1/primary-fileset-remote-hmcs-fs1-15189673184261015053/.volumes/pvc-c190af17-cc13-4e1b-b649-5e8bab4c892e
+    volumeAttributes:
+      clusterId: '8274719981642943972'
+      csi.storage.k8s.io/pv/name: pvc-c190af17-cc13-4e1b-b649-5e8bab4c892e
+      csi.storage.k8s.io/pvc/name: seb
+      csi.storage.k8s.io/pvc/namespace: sushi-gitops
+      storage.kubernetes.io/csiProvisionerIdentity: 1648818291576-8081-spectrumscale.csi.ibm.com
+      volBackendFs: remote-hmcs-fs1
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
+  claimRef: null
   persistentVolumeReclaimPolicy: Delete
   storageClassName: letschat-rahcm-demo
   volumeMode: Filesystem
-
