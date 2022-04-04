@@ -6,5 +6,5 @@ metadata:
     app: letschat-db
 spec:
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   storageClassName: letschat-rahcm-demo
