@@ -9,4 +9,4 @@ spec:
       securityContext:
         runAsUser: 27017
         seLinuxOptions:
-          level: s0:c9,c29
+          level: s0:c20,c26
