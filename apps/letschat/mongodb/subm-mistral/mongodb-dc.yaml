@@ -8,5 +8,3 @@ spec:
       serviceAccountName: mongodb-rhacm
       securityContext:
         runAsUser: 27017
-        seLinuxOptions:
-          level: s0:c20,c26
