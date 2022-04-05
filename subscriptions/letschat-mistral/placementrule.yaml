@@ -12,7 +12,7 @@ spec:
   clusterSelector:
     matchLabels:
       cluster.open-cluster-management.io/clusterset: demo
-      arch: 'ppc64le'
+      arch: 'x86'
     # matchExpressions:
     #   - key: name
     #     operator: In
@@ -36,7 +36,7 @@ spec:
   clusterSelector:
     matchLabels:
       cluster.open-cluster-management.io/clusterset: demo
-      arch: 'ppc64le'
+      arch: 'x86'
     # matchExpressions:
     #   - key: name
     #     operator: In
