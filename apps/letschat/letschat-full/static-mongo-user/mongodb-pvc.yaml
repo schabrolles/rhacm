@@ -5,6 +5,4 @@ metadata:
   labels:
     app: letschat-db
 spec:
-  accessModes:
-    - ReadWriteOnce
   storageClassName: san
