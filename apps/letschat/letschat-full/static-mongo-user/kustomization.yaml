@@ -11,5 +11,5 @@ patchesStrategicMerge:
 #- namespace.yaml
 
 resources:
-- serviceaccount.yaml
-- rolebinding.yaml
+#- serviceaccount.yaml
+#- rolebinding.yaml
