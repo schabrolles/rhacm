@@ -5,6 +5,8 @@ metadata:
     alpha.image.policy.openshift.io/resolve-names: '*'
     image.openshift.io/triggers: >-
       [{"from":{"kind":"ImageStreamTag","name":"letschat:latest","namespace":"letschat"},"fieldPath":"spec.template.spec.containers[?(@.name==\"letschat\")].image","pause":"false"}]
+    app.openshift.io/connects-to: >-
+      [{"apiVersion":"apps.openshift.io/v1","kind":"DeploymentConfig","name":"mongodb"}]
   name: letschat
   labels:
     app: letschat
