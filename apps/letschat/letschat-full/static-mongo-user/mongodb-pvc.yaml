@@ -6,7 +6,3 @@ metadata:
     app: letschat-db
 spec:
   storageClassName: san
-  # dataSource:
-  #   apiGroup: ''
-  #   kind: PersistentVolumeClaim
-  #   name: volsync-letschat-dst

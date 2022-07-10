@@ -2,12 +2,12 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: mongodb-rhacm
-  namespace: letschat-volsync
+  namespace: letschat
 subjects:
   - kind: ServiceAccount
     name: mongodb-rhacm
-    namespace: letschat-volsync
+    namespace: letschat
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: 'system:openshift:scc:anyuid'
+  name: 'system:openshift:scc:nonroot'
