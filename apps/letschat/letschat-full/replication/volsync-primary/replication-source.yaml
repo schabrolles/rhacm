@@ -11,4 +11,4 @@ spec:
     volumeSnapshotClassName: ibm-block-fs7200-snapshot
   sourcePVC: mongodb
   trigger:
-    schedule: '*/3 * * * *'
+    schedule: '* * * * *'
