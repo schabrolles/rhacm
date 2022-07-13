@@ -5,3 +5,4 @@ kind: Kustomization
 resources:
 - volsync-secrets.yaml
 - replication-destination.yaml
+- volsync-dest-svc-export.yaml
