@@ -1,5 +1,6 @@
 apiVersion: volsync.backube/v1alpha1
 kind: ReplicationDestination
+metadata:
   name: letschat
 spec:
   rsync:
