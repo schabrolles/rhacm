@@ -4,7 +4,7 @@ metadata:
   name: letschat
 spec:
   rsync:
-    address: volsync-rsync-dst-letschat.letschat.svc.clusterset.local.
+    address: volsync-rsync-dst-letschat.letschat-volsync.svc.clusterset.local.
     copyMethod: Clone
     sshKeys: volsync-rsync-dst-src-letschat
     storageClassName: san
