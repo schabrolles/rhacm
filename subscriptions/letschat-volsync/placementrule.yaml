@@ -1,0 +1,48 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+      app: letschat
+  name: letschat-primary
+  namespace: letschat-volsync
+spec:
+  # clusters:
+  #   - name: ruby
+  clusterSelector:
+    matchLabels:
+      cluster.open-cluster-management.io/clusterset: tieto
+      letschat: primary
+    # matchExpressions:
+    #   - key: name
+    #     operator: In
+    #     values: 
+    #       - 'grey'
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  clusterReplicas: 1  #Apply to how many matched clusters, default is ALL
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+      app: letschat
+  name: letschat-secondary
+  namespace: letschat-volsync
+spec:
+  # clusters:
+  #   - name: ruby
+  clusterSelector:
+    matchLabels:
+      cluster.open-cluster-management.io/clusterset: tieto
+      letschat: secondary
+    # matchExpressions:
+    #   - key: name
+    #     operator: In
+    #     values: 
+    #       - 'grey'
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  clusterReplicas: 1  #Apply to how many matched clusters, default is ALL
