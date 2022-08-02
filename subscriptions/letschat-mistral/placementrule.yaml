@@ -13,6 +13,7 @@ spec:
     matchLabels:
       cluster.open-cluster-management.io/clusterset: demo
       arch: 'x86'
+      location: 'on-prem'
     # matchExpressions:
     #   - key: name
     #     operator: In
@@ -37,6 +38,7 @@ spec:
     matchLabels:
       cluster.open-cluster-management.io/clusterset: demo
       arch: 'x86'
+      location: 'on-prem'
     # matchExpressions:
     #   - key: name
     #     operator: In
