@@ -8,7 +8,7 @@ spec:
   csi:
     driver: spectrumscale.csi.ibm.com
     volumeHandle: >-
-      8274719981642943972;2403030A:61A7974F;filesetName=letschat-demo;path=/mnt/remote-hmcs-fs1/letschat-demo/data
+      8274719981642943972;2403030A:61A7974F;filesetName=letschat-demo;path=/mnt/remote-mistral-fs1/letschat-demo/data
   accessModes:
     - ReadWriteMany
   claimRef: null
