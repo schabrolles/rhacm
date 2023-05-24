@@ -8,3 +8,14 @@ metadata:
 spec:
   type: GitHub
   pathname: https://github.com/schabrolles/rhacm.git
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: letschat-secrets
+spec:
+  type: Namespace
+  pathname: letschat-secrets
+  sourceNamespaces:
+    - letschat-rhacm

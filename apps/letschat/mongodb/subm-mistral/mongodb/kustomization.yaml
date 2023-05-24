@@ -15,4 +15,4 @@ resources:
 - mongodb-shared-pv.yaml
 - serviceaccount.yaml
 - rolebinding.yaml
-- mongodb-secret.yaml
+#- mongodb-secret.yaml

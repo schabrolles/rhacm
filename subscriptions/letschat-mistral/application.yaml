@@ -5,10 +5,12 @@
       namespace: letschat-rhacm
       name: letschat
     spec:
+      componentKinds:
+        - group: apps.open-cluster-management.io
+          kind: Subscription
       selector:
         matchExpressions:
           - key: app
             operator: In 
             values: 
               - letschat
-              - letchat-db
