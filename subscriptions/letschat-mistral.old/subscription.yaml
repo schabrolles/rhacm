@@ -1,20 +1,20 @@
-# ---
-# apiVersion: apps.open-cluster-management.io/v1
-# kind: Subscription
-# metadata:
-#   name: letschat-secret
-#   labels:
-#     app: letschat
-#   namespace: letschat
-#   annotations:
-#     apps.open-cluster-management.io/github-path: apps/letschat/shared-secrets
-#     apps.open-cluster-management.io/github-branch: main
-# spec:
-#   channel: letschat-rhacm/letschat
-#   placement:
-#     placementRef:
-#       kind: Placement
-#       name: clusterset-demo
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: letschat-secret
+  labels:
+    app: letschat
+  namespace: letschat
+  annotations:
+    apps.open-cluster-management.io/github-path: apps/letschat/shared-secrets
+    apps.open-cluster-management.io/github-branch: main
+spec:
+  channel: letschat-rhacm/letschat
+  placement:
+    placementRef:
+      kind: Placement
+      name: clusterset-demo
 # ---
 # apiVersion: apps.open-cluster-management.io/v1
 # kind: Subscription

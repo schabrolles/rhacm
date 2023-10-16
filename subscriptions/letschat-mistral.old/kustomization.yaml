@@ -8,4 +8,3 @@ resources:
 - channel.yaml
 - subscription.yaml
 - application.yaml
-- letschat-secret-policy.yaml
