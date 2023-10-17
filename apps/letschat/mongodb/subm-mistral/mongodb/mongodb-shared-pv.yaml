@@ -13,5 +13,5 @@ spec:
     - ReadWriteMany
   claimRef: null
   persistentVolumeReclaimPolicy: Delete
-  storageClassName: letschat-rahcm-demo
+  storageClassName: letschat-rhacm-demo
   volumeMode: Filesystem
