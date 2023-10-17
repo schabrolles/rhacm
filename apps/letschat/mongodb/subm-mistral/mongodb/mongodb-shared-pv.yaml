@@ -1,7 +1,7 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: mongodb-shared-pv
+  name: letschat-demo
 spec:
   capacity:
     storage: 3Gi
