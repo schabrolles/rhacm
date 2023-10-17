@@ -5,7 +5,7 @@ metadata:
   labels:
     app: letschat-db
 spec:
-  volumeName: letschat-demo
+  volumeName: mongodb-shared-pv
   accessModes:
     - ReadWriteMany
   resources:
