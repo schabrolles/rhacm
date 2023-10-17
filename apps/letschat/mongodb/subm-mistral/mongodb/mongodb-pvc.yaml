@@ -7,4 +7,4 @@ metadata:
 spec:
   accessModes:
     - ReadWriteMany
-  storageClassName: letschat-rahcm-demo
+  storageClassName: ibm-spectrum-scale-sample

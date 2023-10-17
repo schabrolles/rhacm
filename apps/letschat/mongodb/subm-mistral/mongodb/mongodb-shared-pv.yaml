@@ -13,5 +13,5 @@ spec:
     - ReadWriteMany
   claimRef: null
   persistentVolumeReclaimPolicy: Delete
-  storageClassName: letschat-rhacm-demo
+  storageClassName: ibm-spectrum-scale-sample
   volumeMode: Filesystem
