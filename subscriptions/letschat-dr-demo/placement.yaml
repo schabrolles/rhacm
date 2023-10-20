@@ -6,8 +6,8 @@ metadata:
   namespace: letschat-dr-demo
 spec:
   numberOfClusters: 1
-  # clusterSets:
-  # - demo
+  clusterSets:
+  - dr-demo
   predicates:
   - requiredClusterSelector:
       labelSelector:
@@ -24,8 +24,8 @@ metadata:
   namespace: letschat-dr-demo
 spec:
   numberOfClusters: 1
-  # clusterSets:
-  # - demo
+  clusterSets:
+  - dr-demo
   predicates:
   - requiredClusterSelector:
       labelSelector:
