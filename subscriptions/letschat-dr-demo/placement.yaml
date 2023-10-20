@@ -1,0 +1,36 @@
+---
+apiVersion: cluster.open-cluster-management.io/v1beta1
+kind: Placement
+metadata:
+  name: sitea
+  namespace: letschat-dr-demo
+spec:
+  numberOfClusters: 1
+  # clusterSets:
+  # - demo
+  predicates:
+  - requiredClusterSelector:
+      labelSelector:
+        matchExpressions:
+        - key: site
+          operator: In
+          values:
+          - A
+---
+apiVersion: cluster.open-cluster-management.io/v1beta1
+kind: Placement
+metadata:
+  name: sitea
+  namespace: letschat-dr-demo
+spec:
+  numberOfClusters: 1
+  # clusterSets:
+  # - demo
+  predicates:
+  - requiredClusterSelector:
+      labelSelector:
+        matchExpressions:
+        - key: site
+          operator: In
+          values:
+          - B

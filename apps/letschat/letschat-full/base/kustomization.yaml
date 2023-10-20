@@ -10,4 +10,4 @@ resources:
 - mongodb-svc.yaml
 - mongodb-pvc.yaml
 #- mongodb-pv.yaml
-- mongodb-secret.yaml
+#- mongodb-secret.yaml
