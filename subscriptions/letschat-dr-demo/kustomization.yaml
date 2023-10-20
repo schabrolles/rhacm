@@ -3,7 +3,6 @@ kind: Kustomization
 namespace: letschat-rhacm
 resources:
 - namespace.yaml
-#- placementrule.yaml
 - placement.yaml
 - channel.yaml
 - subscription.yaml
