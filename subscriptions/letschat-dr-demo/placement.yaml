@@ -34,3 +34,13 @@ spec:
           operator: In
           values:
           - b
+---
+apiVersion: cluster.open-cluster-management.io/v1beta1
+kind: Placement
+metadata:
+  name: dr-demo
+  namespace: letschat-dr-demo
+spec:
+  numberOfClusters: 1
+  clusterSets:
+  - dr-demo
