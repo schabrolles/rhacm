@@ -41,6 +41,5 @@ metadata:
   name: dr-demo
   namespace: letschat-dr-demo
 spec:
-  numberOfClusters: 1
   clusterSets:
   - dr-demo

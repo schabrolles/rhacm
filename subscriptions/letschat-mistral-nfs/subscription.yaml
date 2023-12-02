@@ -1,0 +1,86 @@
+# ---
+# apiVersion: apps.open-cluster-management.io/v1
+# kind: Subscription
+# metadata:
+#   name: letschat-secret
+#   labels:
+#     app: letschat
+#   namespace: letschat
+#   annotations:
+#     apps.open-cluster-management.io/github-path: apps/letschat/shared-secrets
+#     apps.open-cluster-management.io/github-branch: main
+# spec:
+#   channel: letschat-rhacm/letschat
+#   placement:
+#     placementRef:
+#       kind: Placement
+#       name: clusterset-demo
+# ---
+# apiVersion: apps.open-cluster-management.io/v1
+# kind: Subscription
+# metadata:
+#   name: secret-letschat-app
+#   namespace: secret-letschat-app
+#   labels:
+#     app: letschat
+# spec:
+#   channel: letschat-rhacm/letschat-secrets
+#   packageFilter:
+#     annotations:
+#       secretname: letschat-secrets
+#   placement:
+#     placementRef:
+#       kind: PlacementRule
+#       name: letschat-app-placement
+# ---
+# apiVersion: apps.open-cluster-management.io/v1
+# kind: Subscription
+# metadata:
+#   name: secret-letschat-db
+#   namespace: letschat-rhacm
+#   labels:
+#     app: letschat
+# spec:
+#   channel: letschat-rhacm/letschat-secrets
+#   packageFilter:
+#     annotations:
+#       secretname: letschat-secrets
+#   placement:
+#     placementRef:
+#       kind: PlacementRule
+#       name: letschat-db-placement
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: letschat-app
+  labels:
+    app: letschat
+  namespace: letschat-rhacm
+  annotations:
+    apps.open-cluster-management.io/github-path: apps/letschat/letschat-app/submariner/letschat
+    apps.open-cluster-management.io/github-branch: main
+spec:
+  channel: letschat-rhacm/letschat
+  placement:
+    placementRef:
+      kind: Placement
+      name: on-prem-x86
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: letschat-db
+  labels:
+    app: letschat
+  namespace: letschat-rhacm
+  annotations:
+    apps.open-cluster-management.io/github-path: apps/letschat/mongodb/subm-mistral-nfs/mongodb
+    apps.open-cluster-management.io/github-branch: main
+spec:
+  channel: letschat-rhacm/letschat
+  placement:
+    placementRef:
+      kind: Placement
+      name: on-prem-x86
+

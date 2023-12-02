@@ -1,0 +1,71 @@
+---
+apiVersion: cluster.open-cluster-management.io/v1beta1
+kind: Placement
+metadata:
+  name: on-prem-x86
+  namespace: letschat-rhacm
+spec:
+  numberOfClusters: 1
+  clusterSets:
+  - demo
+  predicates:
+  - requiredClusterSelector:
+      labelSelector:
+        matchExpressions:
+        - key: arch
+          operator: In
+          values:
+          - x86
+        - key: location
+          operator: In
+          values:
+          - on-prem
+---
+apiVersion: cluster.open-cluster-management.io/v1beta1
+kind: Placement
+metadata:
+  name: on-prem-ppc64le
+  namespace: letschat-rhacm
+spec:
+  numberOfClusters: 1
+  clusterSets:
+  - demo
+  predicates:
+  - requiredClusterSelector:
+      labelSelector:
+        matchExpressions:
+        - key: arch
+          operator: In
+          values:
+          - ppc64le
+        - key: location
+          operator: In
+          values:
+          - on-prem
+---
+apiVersion: cluster.open-cluster-management.io/v1beta1
+kind: Placement
+metadata:
+  name: ibmcloud
+  namespace: letschat-rhacm
+spec:
+  numberOfClusters: 1
+  clusterSets:
+  - demo
+  predicates:
+  - requiredClusterSelector:
+      labelSelector:
+        matchExpressions:
+        - key: location
+          operator: In
+          values:
+          - ibmcloud
+---
+apiVersion: cluster.open-cluster-management.io/v1beta1
+kind: Placement
+metadata:
+  name: clusterset-demo
+  namespace: letschat-rhacm
+spec:
+  clusterSets:
+  - demo

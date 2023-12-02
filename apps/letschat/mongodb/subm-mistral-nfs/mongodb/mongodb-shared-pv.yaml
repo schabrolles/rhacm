@@ -1,0 +1,15 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: mongodb-shared-pv
+spec:
+  capacity:
+    storage: 3Gi
+  nfs:
+    server: 10.3.39.40
+    path: /export/demo-rhacm-submariner/mongodb-letschat-shared
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: nfs-provisioner
+  volumeMode: Filesystem
