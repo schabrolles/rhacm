@@ -2,6 +2,8 @@ kind: PersistentVolume
 apiVersion: v1
 metadata:
   name: mongodb-shared-pv
+  annotations:
+    pv.kubernetes.io/bound-by-controller: 'yes'
 spec:
   capacity:
     storage: 3Gi
@@ -11,5 +13,5 @@ spec:
   accessModes:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Delete
-  storageClassName: nfs-provisioner
+  storageClassName: letschat-rahcm-demo
   volumeMode: Filesystem
