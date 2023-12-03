@@ -9,6 +9,6 @@ spec:
         - name: letschat
           env:
             - name: MONGODB_SERVICE_HOST
-              value: mongodb.letschat-rhacm.svc.clusterset.local
+              value: mongodb
             - name: MONGODB_SERVICE_PORT
               value: '27017'
