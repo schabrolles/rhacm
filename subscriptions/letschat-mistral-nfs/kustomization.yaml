@@ -9,3 +9,4 @@ resources:
 - subscription.yaml
 - application.yaml
 - letschat-secret-policy.yaml
+- mongodb-secret.yaml
