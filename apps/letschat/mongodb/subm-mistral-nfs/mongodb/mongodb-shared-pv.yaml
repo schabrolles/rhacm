@@ -8,7 +8,8 @@ spec:
   capacity:
     storage: 3Gi
   nfs:
-    server: 10.3.39.40
+    #server: 10.3.39.40
+    server: 10.3.39.20
     path: /export/demo-rhacm-submariner/mongodb-letschat-shared
   accessModes:
     - ReadWriteMany
