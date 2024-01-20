@@ -64,7 +64,7 @@ spec:
 apiVersion: cluster.open-cluster-management.io/v1beta1
 kind: Placement
 metadata:
-  name: on-prem-Z
+  name: on-prem-s390x
   namespace: letschat-rhacm
 spec:
   numberOfClusters: 1

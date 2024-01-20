@@ -10,6 +10,7 @@ metadata:
   name: letschat
   labels:
     app: letschat
+    app.openshift.io/runtime: nodejs
     app.kubernetes.io/component: letschat
     app.kubernetes.io/instance: letschat
     app.kubernetes.io/name: letschat
