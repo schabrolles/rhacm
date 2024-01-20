@@ -64,6 +64,28 @@ spec:
 apiVersion: cluster.open-cluster-management.io/v1beta1
 kind: Placement
 metadata:
+  name: on-prem-Z
+  namespace: letschat-rhacm
+spec:
+  numberOfClusters: 1
+  clusterSets:
+  - demo
+  predicates:
+  - requiredClusterSelector:
+      labelSelector:
+        matchExpressions:
+        - key: arch
+          operator: In
+          values:
+          - s390x
+        - key: location
+          operator: In
+          values:
+          - on-prem
+---
+apiVersion: cluster.open-cluster-management.io/v1beta1
+kind: Placement
+metadata:
   name: clusterset-demo
   namespace: letschat-rhacm
 spec:
